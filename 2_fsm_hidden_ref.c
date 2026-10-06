@@ -93,6 +93,11 @@ int main(int argc, char *argv[]) {
       break;
     }
 
+    if (evt != NO_EVENT) {
+      evt = NO_EVENT;
+      continue;
+    }
+
     evt = NO_EVENT;
     sleep_ms(200);
   }
